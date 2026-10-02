@@ -1,0 +1,6 @@
+{
+  "name": "REVHOUSE — Automotive Personal Brand & Creator Ecosystem",
+  "description": "The complete automotive personal brand ecosystem: Garage builds, cinematic media, track events, editorial content, enthusiast community, audience trust, and brand monetization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
