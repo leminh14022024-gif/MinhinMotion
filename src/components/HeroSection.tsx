@@ -13,7 +13,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenBlue
       {/* 16:9 Cinematic Visual Hero Container */}
       <div className="relative w-full h-[520px] md:h-[640px] overflow-hidden">
         <img
-          src="/src/assets/images/hero_civic_black_1790553420550.jpg"
+          src="./assets/images/hero_civic_black_1790553420550.jpg"
           alt="Xe Honda Civic thể thao độ màu đen với biển số đã được che"
           className="w-full h-full object-cover object-center brightness-[0.85] contrast-[1.05] transition-transform duration-1000 scale-100 hover:scale-[1.02]"
           referrerPolicy="no-referrer"

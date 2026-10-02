@@ -38,7 +38,7 @@ export const INITIAL_CARS: Car[] = [
     topSpeedMph: 199,
     maxRpm: 9000,
     soundProfile: 'flat6',
-    image: '/src/assets/images/showcase_garage_gt3_1790523002119.jpg',
+    image: './assets/images/showcase_garage_gt3_1790523002119.jpg',
     story: 'Ordered without rear wing for clean touring lines, but dialed in with Manthey Racing underbody diffuser channels, full titanium Akrapovič headers, and bespoke KW V4 Clubsport dampers for Laguna Seca and Buttonwillow.',
     modifications: [
       {
@@ -82,7 +82,7 @@ export const INITIAL_CARS: Car[] = [
     topSpeedMph: 191,
     maxRpm: 8400,
     soundProfile: 'inline6Turbo',
-    image: '/src/assets/images/hero_automotive_brand_1790522988318.jpg',
+    image: './assets/images/hero_automotive_brand_1790522988318.jpg',
     story: 'Preserved in factory Bayside Blue, rebuilt from the bare block with HKS Step 2 2.8L stroker kit and twin Garrett G25-550 turbos. Built as the ultimate dawn canyon weapon with electronic ATTESA-ETS Pro AWD traction.',
     modifications: [
       {
@@ -124,7 +124,7 @@ export const INITIAL_CARS: Car[] = [
     topSpeedMph: 178,
     maxRpm: 8200,
     soundProfile: 'inline6Turbo',
-    image: '/src/assets/images/creator_media_film_1790523031695.jpg',
+    image: './assets/images/creator_media_film_1790523031695.jpg',
     story: 'The mechanical purist pinnacle. Retains the factory carbon intake plenum that makes one of the most intoxicating induction sounds in automotive history. Converted to a factory 6-speed manual with Karbonius dry-carbon roof.',
     modifications: [
       {
@@ -161,7 +161,7 @@ export const INITIAL_CARS: Car[] = [
     topSpeedMph: 155,
     maxRpm: 16000,
     soundProfile: 'v8',
-    image: '/src/assets/images/event_trackday_rally_1790523016284.jpg',
+    image: './assets/images/event_trackday_rally_1790523016284.jpg',
     story: 'The studio production and scouting mule. 800V architecture for 270kW rapid charging across remote mountain passes, carrying camera gimbals, extra track slicks, and four full-size bags without breaking a sweat.',
     modifications: [
       {
@@ -195,7 +195,7 @@ export const INITIAL_MEDIA: MediaEpisode[] = [
     featuredCar: 'Porsche 911 GT3 Touring',
     cameraRig: 'RED Komodo 6K + Ronin 2 Gyro Crane on Chase Vehicle',
     summary: 'At 04:30 AM before the tour buses awaken, we attacked the 48 hairpin turns of Stelvio Pass with zero music, only pure flat-six mechanical induction audio.',
-    image: '/src/assets/images/hero_automotive_brand_1790522988318.jpg',
+    image: './assets/images/hero_automotive_brand_1790522988318.jpg',
     highlights: [
       'Uncut 8-minute onboard sound capture using binaural boundary microphones',
       'Telemetry overlay breaking down apex speeds and tire slip angles',
@@ -212,7 +212,7 @@ export const INITIAL_MEDIA: MediaEpisode[] = [
     featuredCar: 'Nissan Skyline GT-R V-Spec II',
     cameraRig: 'Sony FX6 + Cooke Anamorphic Primes',
     summary: 'Many modified Skylines sit in climate-controlled garages. We subjected our 585-HP RB26 build to 1,000 continuous track and mountain miles in triple-digit heat.',
-    image: '/src/assets/images/creator_media_film_1790523031695.jpg',
+    image: './assets/images/creator_media_film_1790523031695.jpg',
     highlights: [
       'Teardown of oil analysis samples showing bearing wear levels',
       'Intercooler intake air temperature deltas on 20-minute hot stints',
@@ -229,7 +229,7 @@ export const INITIAL_MEDIA: MediaEpisode[] = [
     featuredCar: 'Porsche 911 GT3 Touring',
     cameraRig: 'AiM SmartyCam 3 + Dual Chase Drones',
     summary: 'Turn 6 at Laguna Seca requires absolute blind faith and precise damper rebound. Here is the step-by-step telemetry breakdown that shaved 1.8 seconds off our personal best.',
-    image: '/src/assets/images/showcase_garage_gt3_1790523002119.jpg',
+    image: './assets/images/showcase_garage_gt3_1790523002119.jpg',
     highlights: [
       'Brake pressure trace comparison between progressive and trail braking',
       'How 2 clicks of front low-speed compression eliminated high-speed understeer',
@@ -246,7 +246,7 @@ export const INITIAL_MEDIA: MediaEpisode[] = [
     featuredCar: 'BMW M3 CSL (E46)',
     cameraRig: 'Leica SL2-S + Arri Ultra Primes',
     summary: 'A quiet documentary reflection on car culture, mindfulness, and the emotional connection between a human being, three pedals, and an empty winding mountain road.',
-    image: '/src/assets/images/event_trackday_rally_1790523016284.jpg',
+    image: './assets/images/event_trackday_rally_1790523016284.jpg',
     highlights: [
       'The acoustics of the carbon CSL airbox reverberating through tunnels',
       'Interviews with local dawn patrol regulars from the morning meetup',
