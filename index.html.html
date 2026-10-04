@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTO - Personal Automotive Platform & Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">AUTO</div>
+      <nav class="nav-menu">
+        <a href="#stories">STORIES</a>
+        <a href="#events">EVENTS</a>
+        <a href="#quiz-section">WHAT TO BUY?</a>
+        <a href="#community">COMMUNITY</a>
+        <a href="#about">ABOUT</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#quiz-section" class="btn-quiz-nav">WHAT SHOULD I BUY? →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>CARS ARE MORE<br>THAN MACHINES.</h1>
+      <p>Stories, driving experiences, photography and communities built around the cars we love.</p>
+      <div class="hero-btns">
+        <a href="#stories" class="btn btn-secondary">EXPLORE STORIES →</a>
+        <a href="#quiz-section" class="btn btn-primary">WHAT SHOULD I BUY? →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND MANIFESTO -->
+  <section id="about" class="manifesto-section">
+    <div class="container">
+      <div class="manifesto-box">
+        <span class="manifesto-tag">MY PURPOSE</span>
+        <blockquote>
+          “Tôi xây website này không phải vì tôi là chuyên gia về xe. Tôi xây nó vì tôi yêu xe, và muốn lưu giữ, chia sẻ hành trình khám phá thế giới xe của mình — đồng thời tạo một nơi để những người có cùng đam mê có thể tìm thấy nhau.”
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES & DRIVING EXPERIENCES -->
+  <section id="stories" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>CAR EXPERIENCES & STORIES</h2>
+        <p>Góc nhìn chân thật từ những chuyến đi và các dòng xe tôi đã trực tiếp lái thử.</p>
+      </div>
+
+      <div class="taxonomy-filters">
+        <button class="filter-btn active" onclick="filterStories('all', this)">ALL</button>
+        <button class="filter-btn" onclick="filterStories('BMW', this)">BMW</button>
+        <button class="filter-btn" onclick="filterStories('Porsche', this)">PORSCHE</button>
+        <button class="filter-btn" onclick="filterStories('Track', this)">TRACK DAY</button>
+        <button class="filter-btn" onclick="filterStories('Roadtrip', this)">ROADTRIP</button>
+      </div>
+
+      <div class="stories-grid">
+        <article class="story-card" data-category="BMW Roadtrip">
+          <div class="story-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="BMW M3">
+            <span class="story-tag">DRIVE REVIEW</span>
+          </div>
+          <div class="story-content">
+            <div class="story-meta">BMW M3 Competition • 1,200 km Roadtrip</div>
+            <h3>Chuyến xuyên Việt 5 ngày cùng M3: Sức mạnh và sự thực dụng</h3>
+            <p>Đánh giá cảm giác lái thực tế sau hơn 1000km qua đủ loại địa hình từ cao tốc đến đèo dốc...</p>
+            <a href="#" class="read-more">ĐỌC CÂU CHUYỆN →</a>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="Porsche Track">
+          <div class="story-img-wrap">
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80" alt="Porsche 911">
+            <span class="story-tag">TRACK EXPERIENCE</span>
+          </div>
+          <div class="story-content">
+            <div class="story-meta">Porsche 911 GT3 • Đại Nam Track Day</div>
+            <h3>Một ngày ép giới hạn Porsche 911 GT3 trên đường đua</h3>
+            <p>Trải nghiệm chân thực khi đưa cỗ máy hút khí tự nhiên này vào track. Những điều thông số kỹ thuật không nói cho bạn.</p>
+            <a href="#" class="read-more">ĐỌC CÂU CHUYỆN →</a>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="Roadtrip">
+          <div class="story-img-wrap">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Vintage Car">
+            <span class="story-tag">PERSPECTIVE</span>
+          </div>
+          <div class="story-content">
+            <div class="story-meta">Classic Cars • Workshop Visit</div>
+            <h3>Tại sao xe cổ lại có sức hút kỳ lạ với người trẻ?</h3>
+            <p>Trò chuyện cùng những thợ phục chế xe lâu năm và góc nhìn về văn hóa chơi xe nguyên bản tại Việt Nam.</p>
+            <a href="#" class="read-more">ĐỌC CÂU CHUYỆN →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOMOTIVE EVENTS -->
+  <section id="events" class="section-padding bg-secondary">
+    <div class="container">
+      <div class="section-header">
+        <h2>HOT AUTOMOTIVE EVENTS</h2>
+        <p>Cập nhật sự kiện, triển lãm và các buổi gặp mặt mê xe nóng hổi không thể bỏ lỡ.</p>
+      </div>
+
+      <div class="events-list">
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">15</span>
+            <span class="month">OCT</span>
+          </div>
+          <div class="event-info">
+            <span class="badge-status live">SẮP DIỄN RA</span>
+            <h3>Vietnam Motor Show 2026</h3>
+            <p>📍 SECC Quận 7, TP. Hồ Chí Minh | 🚘 Triển lãm ô tô lớn nhất trong năm quy tụ 15+ thương hiệu xe.</p>
+          </div>
+          <div class="event-action">
+            <button class="btn btn-secondary" onclick="alert('Đã lưu sự kiện vào lịch của bạn!')">LƯU LỊCH 📅</button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">28</span>
+            <span class="month">NOV</span>
+          </div>
+          <div class="event-info">
+            <span class="badge-status">SẮP DIỄN RA</span>
+            <h3>Weekend Car & Coffee Meetup</h3>
+            <p>📍 Thủ Thiêm, TP. Thủ Đức | ☕ Buổi giao lưu tự do dành cho các thành viên yêu thích Supercar & Sports Car.</p>
+          </div>
+          <div class="event-action">
+            <button class="btn btn-secondary" onclick="alert('Đã lưu sự kiện vào lịch của bạn!')">LƯU LỊCH 📅</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED FUNCTION: WHAT SHOULD I BUY? -->
+  <section id="quiz-section" class="quiz-section">
+    <div class="container">
+      <div class="quiz-header">
+        <h2>WHAT SHOULD I BUY?</h2>
+        <p>Let's find a car that fits your life. No car knowledge required.</p>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-bar-line">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="step-indicator" id="stepIndicator">STEP 01 — 1 / 6</div>
+      </div>
+
+      <div class="quiz-card" id="quizCard">
+
+        <!-- STEP 1 -->
+        <div class="quiz-step active" data-step="1">
+          <div class="step-title">WHO ARE YOU BUYING THIS CAR FOR?</div>
+          <div class="card-grid-4">
+            <div class="option-card" onclick="selectOption(this, 'userType', 'Just Me')">
+              <span class="card-icon">👤</span>
+              <h4>JUST ME</h4>
+              <p>Daily driving</p>
+            </div>
+            <div class="option-card" onclick="selectOption(this, 'userType', 'My Family')">
+              <span class="card-icon">👨‍👩‍👧</span>
+              <h4>MY FAMILY</h4>
+              <p>Space & safety</p>
+            </div>
+            <div class="option-card" onclick="selectOption(this, 'userType', 'For Fun')">
+              <span class="card-icon">🏁</span>
+              <h4>FOR FUN</h4>
+              <p>Driving thrill</p>
+            </div>
+            <div class="option-card" onclick="selectOption(this, 'userType', 'Not Sure')">
+              <span class="card-icon">🤷</span>
+              <h4>I'M NOT SURE</h4>
+              <p>Help me decide</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="quiz-step" data-step="2">
+          <div class="step-title">WHAT'S YOUR BUDGET?</div>
+          <div class="budget-selector">
+            <div class="budget-value" id="budgetValue">$60,000</div>
+            <input type="range" min="20000" max="120000" step="5000" value="60000" class="budget-slider" id="budgetSlider" oninput="updateBudget(this.value)">
+            <div class="budget-range-labels">
+              <span>$20K</span>
+              <span>$120K+</span>
+            </div>
+            <div class="not-sure-check">
+              <button class="btn btn-secondary" id="btnBudgetNotSure" onclick="toggleBudgetNotSure()">I'M NOT SURE YET</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="quiz-step" data-step="3">
+          <div class="step-title">HOW WILL YOU USE YOUR CAR?</div>
+          <p class="step-sub">Select all that apply.</p>
+          <div class="card-grid-3">
+            <div class="option-card multi" onclick="toggleMultiOption(this, 'Daily commute')">
+              <span class="card-icon">🚗</span>
+              <h4>Daily commute</h4>
+            </div>
+            <div class="option-card multi" onclick="toggleMultiOption(this, 'Family')">
+              <span class="card-icon">👨‍👩‍👧</span>
+              <h4>Family</h4>
+            </div>
+            <div class="option-card multi" onclick="toggleMultiOption(this, 'Road trips')">
+              <span class="card-icon">🛣️</span>
+              <h4>Road trips</h4>
+            </div>
+            <div class="option-card multi" onclick="toggleMultiOption(this, 'City driving')">
+              <span class="card-icon">🏙️</span>
+              <h4>City driving</h4>
+            </div>
+            <div class="option-card multi" onclick="toggleMultiOption(this, 'Adventure')">
+              <span class="card-icon">🏕️</span>
+              <h4>Adventure</h4>
+            </div>
+            <div class="option-card multi" onclick="toggleMultiOption(this, 'Weekend fun')">
+              <span class="card-icon">🏁</span>
+              <h4>Weekend fun</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="quiz-step" data-step="4">
+          <div class="step-title">WHAT MATTERS MOST TO YOU?</div>
+          <p class="step-sub">Choose up to 5.</p>
+          <div class="pill-grid">
+            <button class="pill-btn" onclick="togglePriority(this, 'SAFETY')">SAFETY</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'RELIABILITY')">RELIABILITY</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'COMFORT')">COMFORT</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'PERFORMANCE')">PERFORMANCE</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'FUEL ECONOMY')">FUEL ECONOMY</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'DESIGN')">DESIGN</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'TECHNOLOGY')">TECHNOLOGY</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'SPACE')">SPACE</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'LOW COST')">LOW COST</button>
+            <button class="pill-btn" onclick="togglePriority(this, 'DRIVING FUN')">DRIVING FUN</button>
+          </div>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="quiz-step" data-step="5">
+          <div class="step-title">WHAT DO YOU DRIVE NOW?</div>
+          <div class="search-box">
+            <input type="text" id="currentCarInput" placeholder="Search your current car... (e.g. Honda Civic 2019)" class="text-input">
+          </div>
+          
+          <div class="step-title-sub">WHAT DO YOU WANT TO CHANGE?</div>
+          <div class="checkbox-grid">
+            <label class="custom-checkbox">
+              <input type="checkbox" name="change" value="More space">
+              <span class="checkmark"></span> More space
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="change" value="More comfort">
+              <span class="checkmark"></span> More comfort
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="change" value="More performance">
+              <span class="checkmark"></span> More performance
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="change" value="Better technology">
+              <span class="checkmark"></span> Better technology
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="change" value="Lower running cost">
+              <span class="checkmark"></span> Lower running cost
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="change" value="More premium">
+              <span class="checkmark"></span> More premium
+            </label>
+          </div>
+        </div>
+
+        <!-- STEP 6 -->
+        <div class="quiz-step" data-step="6">
+          <div class="result-header">
+            <span class="tag-badge">YOUR CAR MATCH</span>
+            <h2>Based on what you've told us...</h2>
+          </div>
+
+          <div class="best-match-card">
+            <div class="match-top-label">🥇 BEST OVERALL MATCH</div>
+            <div class="match-main-grid">
+              <div class="match-image-col">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80" alt="BMW X3" class="result-car-img">
+              </div>
+              <div class="match-info-col">
+                <div class="result-title-row">
+                  <h3>BMW X3</h3>
+                  <span class="score-pill">92% MATCH</span>
+                </div>
+                <div class="why-fits">
+                  <h4>Why it fits you</h4>
+                  <ul>
+                    <li>✓ Family friendly & spacious</li>
+                    <li>✓ Exceptional comfort & tech</li>
+                    <li>✓ Good daily driver with AWD capability</li>
+                    <li>✓ Fits your budget range</li>
+                  </ul>
+                </div>
+                <div class="consider-box">
+                  <strong>⚠️ CONSIDER THIS:</strong> Ownership costs may be higher than some alternatives.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="other-matches">
+            <h3>YOUR OTHER MATCHES</h3>
+            <div class="other-matches-grid">
+              <div class="sub-match-card">
+                <span class="match-type">❤️ Lifestyle Match</span>
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=500&q=80" alt="BMW X3">
+                <h4>BMW X3</h4>
+                <div class="match-pct">92% MATCH</div>
+              </div>
+
+              <div class="sub-match-card">
+                <span class="match-type">💰 Value Match</span>
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=80" alt="Mazda CX-5">
+                <h4>Mazda CX-5</h4>
+                <div class="match-pct">88% MATCH</div>
+              </div>
+
+              <div class="sub-match-card">
+                <span class="match-type">🏁 Fun Match</span>
+                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=500&q=80" alt="Toyota GR Supra">
+                <h4>Toyota GR Supra</h4>
+                <div class="match-pct">84% MATCH</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="compare-section">
+            <h3>WHICH ONE FITS YOU BETTER?</h3>
+            <div class="table-responsive">
+              <table class="compare-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>BMW X3</th>
+                    <th>Mazda CX-5</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Your Match</td>
+                    <td><strong class="text-green">92%</strong></td>
+                    <td><strong class="text-green">88%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Comfort</td>
+                    <td>★★★★★</td>
+                    <td>★★★★☆</td>
+                  </tr>
+                  <tr>
+                    <td>Practicality</td>
+                    <td>★★★★★</td>
+                    <td>★★★★☆</td>
+                  </tr>
+                  <tr>
+                    <td>Performance</td>
+                    <td>★★★★☆</td>
+                    <td>★★★☆☆</td>
+                  </tr>
+                  <tr>
+                    <td>Ownership Cost</td>
+                    <td>★★★☆☆</td>
+                    <td>★★★★★</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="insight-box">
+              <h4>WHAT THIS MEANS FOR YOU</h4>
+              <p>If comfort and performance are your priorities, the <strong>X3</strong> may suit you better.<br>
+              If lower ownership costs are more important, the <strong>CX-5</strong> may be the better choice.</p>
+            </div>
+          </div>
+
+          <div class="ownership-section">
+            <h3>WHAT WILL IT REALLY COST? (BMW X3 ESTIMATE)</h3>
+            <div class="cost-grid">
+              <div class="cost-card">
+                <span class="cost-label">Purchase Price</span>
+                <span class="cost-value">$48,500</span>
+              </div>
+              <div class="cost-card">
+                <span class="cost-label">Est. Fuel / Year</span>
+                <span class="cost-value">$2,100</span>
+              </div>
+              <div class="cost-card">
+                <span class="cost-label">Est. Maintenance / Year</span>
+                <span class="cost-value">$1,200</span>
+              </div>
+              <div class="cost-card">
+                <span class="cost-label">Est. Insurance / Year</span>
+                <span class="cost-value">$1,800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-nav-btns" id="quizNavBtns">
+          <button class="btn btn-secondary" id="btnPrev" onclick="changeStep(-1)" style="display: none;">← BACK</button>
+          <button class="btn btn-primary" id="btnNext" onclick="changeStep(1)">CONTINUE →</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY DIRECTORY -->
+  <section id="community" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>COMMUNITY DIRECTORY</h2>
+        <p>Kết nối các câu lạc bộ, hội nhóm mê xe theo dòng xe, thương hiệu và khu vực.</p>
+      </div>
+
+      <div class="community-layout">
+        <div class="community-cards">
+          <div class="community-card">
+            <div class="comm-header">
+              <h4>BMW Club Saigon</h4>
+              <span class="verified-badge">✓ VERIFIED</span>
+            </div>
+            <p class="comm-meta">🚗 Brand: BMW | 🏎️ Models: Sedan & SUV | 📍 Location: TP. Hồ Chí Minh</p>
+            <p>Cộng đồng quy tụ 1,200+ thành viên sở hữu và đam mê các dòng xe BMW tại miền Nam.</p>
+            <a href="#" target="_blank" class="comm-link">THAM GIA NHÓM →</a>
+          </div>
+
+          <div class="community-card">
+            <div class="comm-header">
+              <h4>Porsche Passion Vietnam</h4>
+              <span class="verified-badge">✓ VERIFIED</span>
+            </div>
+            <p class="comm-meta">🚗 Brand: Porsche | 🏎️ Models: 911, Cayman, Macan | 📍 Location: Toàn Quốc</p>
+            <p>Hội nhóm chia sẻ kinh nghiệm bảo dưỡng, tổ chức track day và roadtrip định kỳ.</p>
+            <a href="#" target="_blank" class="comm-link">THAM GIA NHÓM →</a>
+          </div>
+        </div>
+
+        <div class="submit-comm-box">
+          <h3>➕ SUBMIT YOUR COMMUNITY</h3>
+          <p>Bạn là Admin một hội nhóm mê xe? Hãy gửi thông tin để cùng tạo dựng mạng lưới người mê xe rộng lớn hơn.</p>
+          <form id="submitCommForm" onsubmit="handleCommSubmit(event)">
+            <input type="text" placeholder="Tên hội nhóm / Club" required class="text-input">
+            <input type="text" placeholder="Thương hiệu / Dòng xe chính (VD: Honda Civic)" required class="text-input">
+            <input type="text" placeholder="Khu vực (VD: Hà Nội, TP.HCM)" required class="text-input">
+            <input type="url" placeholder="Link Fanpage / Group Facebook" required class="text-input">
+            <button type="submit" class="btn btn-primary btn-full">GỬI XÁC NHẬN (+ SUBMIT)</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">AUTO</div>
+        <p>A personal automotive journey & community platform.</p>
+        <div class="social-links">
+          <a href="#" title="YouTube">▶️ YouTube</a>
+          <a href="#" title="Facebook">📘 Facebook</a>
+          <a href="#" title="Instagram">📸 Instagram</a>
+          <a href="#" title="TikTok">🎵 TikTok</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <ul>
+          <li><a href="#stories">Car Stories</a></li>
+          <li><a href="#events">Automotive Events</a></li>
+          <li><a href="#quiz-section">What Should I Buy?</a></li>
+          <li><a href="#community">Community Directory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>WORK WITH ME</h4>
+        <ul>
+          <li><a href="mailto:contact@auto.com">🤝 Brand Partnerships</a></li>
+          <li><a href="mailto:contact@auto.com">🎥 Video & Photography Services</a></li>
+          <li><a href="mailto:contact@auto.com">🚗 Sponsorship & Collaborations</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© 2026 AUTO PLATFORM. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
