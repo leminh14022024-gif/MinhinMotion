@@ -309,145 +309,132 @@
           </div>
         </div>
 
-        <!-- STEP 6 -->
-        <div class="quiz-step" data-step="6">
-          <div class="result-header">
-            <span class="tag-badge">YOUR CAR MATCH</span>
-            <h2>Based on what you've told us...</h2>
-          </div>
+       <!-- STEP 6 -->
+<div class="quiz-step" data-step="6">
+  <div class="result-header">
+    <span class="tag-badge">YOUR CAR MATCHES</span>
+    <h2>Based on your lifestyle and preferences</h2>
+  </div>
 
-          <div class="best-match-card">
-            <div class="match-top-label">🥇 BEST OVERALL MATCH</div>
-            <div class="match-main-grid">
-              <div class="match-image-col">
-                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80" alt="BMW X3" class="result-car-img">
-              </div>
-              <div class="match-info-col">
-                <div class="result-title-row">
-                  <h3>BMW X3</h3>
-                  <span class="score-pill">92% MATCH</span>
-                </div>
-                <div class="why-fits">
-                  <h4>Why it fits you</h4>
-                  <ul>
-                    <li>✓ Family friendly & spacious</li>
-                    <li>✓ Exceptional comfort & tech</li>
-                    <li>✓ Good daily driver with AWD capability</li>
-                    <li>✓ Fits your budget range</li>
-                  </ul>
-                </div>
-                <div class="consider-box">
-                  <strong>⚠️ CONSIDER THIS:</strong> Ownership costs may be higher than some alternatives.
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- MAIN SELECTED CAR DETAIL DISPLAY -->
+  <div class="best-match-card" id="mainCarResult">
+    <!-- Loaded dynamically via JS -->
+  </div>
 
-          <div class="other-matches">
-            <h3>YOUR OTHER MATCHES</h3>
-            <div class="other-matches-grid">
-              <div class="sub-match-card">
-                <span class="match-type">❤️️ Lifestyle Match</span>
-                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=500&q=80" alt="BMW X3">
-                <h4>BMW X3</h4>
-                <div class="match-pct">92% MATCH</div>
-              </div>
+  <!-- GRID OF CAR OPTIONS FOR USER TO CLICK -->
+  <div class="other-matches">
+    <h3>SELECT A CAR TO VIEW DETAILED SPECS & COSTS</h3>
+    <p style="color: #94a3b8; margin-bottom: 20px;">
+      Click any car below to inspect match score, features, and ownership costs:
+    </p>
+    
+    <div class="other-matches-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px;">
+      <div class="sub-match-card" onclick="loadCarDetail('bmw_x3')">
+        <span class="match-type">🥇 Premium SUV</span>
+        <h4>BMW X3</h4>
+        <div class="match-pct">92% MATCH</div>
+      </div>
 
-              <div class="sub-match-card">
-                <span class="match-type">💰 Value Match</span>
-                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=80" alt="Mazda CX-5">
-                <h4>Mazda CX-5</h4>
-                <div class="match-pct">88% MATCH</div>
-              </div>
+      <div class="sub-match-card" onclick="loadCarDetail('civic_2021')">
+        <span class="match-type">🏁 Sporty Sedan</span>
+        <h4>Honda Civic 2021</h4>
+        <div class="match-pct">90% MATCH</div>
+      </div>
 
-              <div class="sub-match-card">
-                <span class="match-type">🏁 Fun Match</span>
-                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=500&q=80" alt="Toyota GR Supra">
-                <h4>Toyota GR Supra</h4>
-                <div class="match-pct">84% MATCH</div>
-              </div>
-            </div>
-          </div>
+      <div class="sub-match-card" onclick="loadCarDetail('crv_2025')">
+        <span class="match-type">👨‍👩‍👧 Family Crossover</span>
+        <h4>Honda CR-V 2025</h4>
+        <div class="match-pct">91% MATCH</div>
+      </div>
 
-          <div class="compare-section">
-            <h3>WHICH ONE FITS YOU BETTER?</h3>
-            <div class="table-responsive">
-              <table class="compare-table">
-                <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>BMW X3</th>
-                    <th>Mazda CX-5</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Your Match</td>
-                    <td><strong class="text-green">92%</strong></td>
-                    <td><strong class="text-green">88%</strong></td>
-                  </tr>
-                  <tr>
-                    <td>Comfort</td>
-                    <td>★★★★★</td>
-                    <td>★★★★☆</td>
-                  </tr>
-                  <tr>
-                    <td>Practicality</td>
-                    <td>★★★★★</td>
-                    <td>★★★★☆</td>
-                  </tr>
-                  <tr>
-                    <td>Performance</td>
-                    <td>★★★★☆</td>
-                    <td>★★★☆☆</td>
-                  </tr>
-                  <tr>
-                    <td>Ownership Cost</td>
-                    <td>★★★☆☆</td>
-                    <td>★★★★★</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <div class="sub-match-card" onclick="loadCarDetail('santafe_2026')">
+        <span class="match-type">🏔️ Modern SUV</span>
+        <h4>Hyundai Santa Fe 2026</h4>
+        <div class="match-pct">93% MATCH</div>
+      </div>
 
-            <div class="insight-box">
-              <h4>WHAT THIS MEANS FOR YOU</h4>
-              <p>If comfort and performance are your priorities, the <strong>X3</strong> may suit you better.<br>
-              If lower ownership costs are more important, the <strong>CX-5</strong> may be the better choice.</p>
-            </div>
-          </div>
+      <div class="sub-match-card" onclick="loadCarDetail('tucson')">
+        <span class="match-type">✨ Urban Crossover</span>
+        <h4>Hyundai Tucson</h4>
+        <div class="match-pct">89% MATCH</div>
+      </div>
 
-          <div class="ownership-section">
-            <h3>WHAT WILL IT REALLY COST? (BMW X3 ESTIMATE)</h3>
-            <div class="cost-grid">
-              <div class="cost-card">
-                <span class="cost-label">Purchase Price</span>
-                <span class="cost-value">$48,500</span>
-              </div>
-              <div class="cost-card">
-                <span class="cost-label">Est. Fuel / Year</span>
-                <span class="cost-value">$2,100</span>
-              </div>
-              <div class="cost-card">
-                <span class="cost-label">Est. Maintenance / Year</span>
-                <span class="cost-value">$1,200</span>
-              </div>
-              <div class="cost-card">
-                <span class="cost-label">Est. Insurance / Year</span>
-                <span class="cost-value">$1,800</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="sub-match-card" onclick="loadCarDetail('stargazer_2024')">
+        <span class="match-type">💰 Smart MPV</span>
+        <h4>Hyundai Stargazer X 2024</h4>
+        <div class="match-pct">87% MATCH</div>
+      </div>
 
-        <div class="quiz-nav-btns" id="quizNavBtns">
-          <button class="btn btn-secondary" id="btnPrev" onclick="changeStep(-1)" style="display: none;">← BACK</button>
-          <button class="btn btn-primary" id="btnNext" onclick="changeStep(1)">CONTINUE →</button>
-        </div>
+      <div class="sub-match-card" onclick="loadCarDetail('fortuner')">
+        <span class="match-type">⛰️ Off-road SUV</span>
+        <h4>Toyota Fortuner</h4>
+        <div class="match-pct">86% MATCH</div>
+      </div>
 
+      <div class="sub-match-card" onclick="loadCarDetail('innova')">
+        <span class="match-type">👨‍👩‍👧‍👦 Hybrid MPV</span>
+        <h4>Toyota Innova Cross</h4>
+        <div class="match-pct">88% MATCH</div>
+      </div>
+
+      <div class="sub-match-card" onclick="loadCarDetail('carnival')">
+        <span class="match-type">👑 Luxury MPV</span>
+        <h4>Kia Carnival</h4>
+        <div class="match-pct">94% MATCH</div>
+      </div>
+
+      <div class="sub-match-card" onclick="loadCarDetail('sorento')">
+        <span class="match-type">🌟 Tech SUV</span>
+        <h4>Kia Sorento</h4>
+        <div class="match-pct">90% MATCH</div>
+      </div>
+
+      <div class="sub-match-card" onclick="loadCarDetail('sportage')">
+        <span class="match-type">⚡ Dynamic Crossover</span>
+        <h4>Kia Sportage</h4>
+        <div class="match-pct">88% MATCH</div>
+      </div>
+
+      <div class="sub-match-card" onclick="loadCarDetail('carens')">
+        <span class="match-type">🧩 Compact MPV</span>
+        <h4>Kia Carens</h4>
+        <div class="match-pct">85% MATCH</div>
+      </div>
+
+      <div class="sub-match-card" onclick="loadCarDetail('k5')">
+        <span class="match-type">🏎️ Fastback Sedan</span>
+        <h4>Kia K5</h4>
+        <div class="match-pct">89% MATCH</div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- RATING TABLE BREAKDOWN -->
+  <div class="compare-section" style="margin-top: 40px;">
+    <h3>DETAILED RATING BREAKDOWN</h3>
+    <div class="table-responsive">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Evaluation Criteria</th>
+            <th>Selected Car Score</th>
+          </tr>
+        </thead>
+        <tbody id="compareTableBody">
+          <!-- Loaded dynamically via JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ESTIMATED OWNERSHIP COSTS -->
+  <div class="ownership-section" style="margin-top: 40px;">
+    <h3>ANNUAL OWNERSHIP ESTIMATE</h3>
+    <div class="cost-grid" id="costGridDisplay">
+      <!-- Loaded dynamically via JS -->
+    </div>
+  </div>
+</div>
 
   <!-- COMMUNITY DIRECTORY -->
   <section id="community" class="section-padding">
