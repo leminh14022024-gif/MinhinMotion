@@ -1,4 +1,4 @@
-// DATABASE 15 MẪU XE VỚI ĐẦY ĐỦ THÔNG SỐ & CHỈ SỐ
+// DATABASE FOR 15 CAR MODELS WITH FULL SPECS & INDICATORS
 const carDatabase = {
   bmw_x3: {
     name: "BMW X3",
@@ -6,14 +6,14 @@ const carDatabase = {
     matchPct: "92%",
     img: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Cảm giác lái thể thao vượt trội trong phân khúc",
-      "✓ Không gian nội thất sang trọng, hiện đại",
-      "✓ Khả năng vận hành êm ái trên đường dài",
-      "✓ Hệ thống an toàn chủ động cao cấp"
+      "✓ Superior driving dynamics and sporty handling in its segment",
+      "✓ Premium, modern, and spacious interior layout",
+      "✓ Smooth and comfortable ride performance on long trips",
+      "✓ High-level active safety and driver assistance features"
     ],
-    consider: "Chi phí bảo dưỡng và phụ tùng cao hơn xe Nhật/Hàn.",
+    consider: "Maintenance and spare parts costs are higher than Asian brand alternatives.",
     ratings: { comfort: "★★★★★", practical: "★★★★★", perf: "★★★★☆", cost: "★★★☆☆" },
-    costs: { price: "$48,500", fuel: "$2,100 / năm", maint: "$1,200 / năm", ins: "$1,800 / năm" }
+    costs: { price: "$48,500", fuel: "$2,100 / yr", maint: "$1,200 / yr", ins: "$1,800 / yr" }
   },
   civic_2021: {
     name: "Honda Civic 2021",
@@ -21,14 +21,14 @@ const carDatabase = {
     matchPct: "90%",
     img: "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Thiết kế sedan thể thao, đầm chắc khi ôm cua",
-      "✓ Động cơ 1.5L Turbo tiết kiệm nhiên liệu tối ưu",
-      "✓ Giữ giá tốt, phụ tùng dễ thay thế",
-      "✓ Chi phí vận hành vô cùng hợp lý"
+      "✓ Sporty sedan styling with exceptionally solid cornering",
+      "✓ Fuel-efficient 1.5L Turbo engine for optimal daily driving",
+      "✓ Excellent resale value and easily accessible parts",
+      "✓ Very reasonable overall ownership and running costs"
     ],
-    consider: "Gầm xe tương đối thấp, cách âm gầm chưa thực sự ấn tượng.",
+    consider: "Relatively low ground clearance and noticeable road noise on rough roads.",
     ratings: { comfort: "★★★★☆", practical: "★★★★☆", perf: "★★★★☆", cost: "★★★★★" },
-    costs: { price: "$22,000", fuel: "$1,200 / năm", maint: "$450 / năm", ins: "$850 / năm" }
+    costs: { price: "$22,000", fuel: "$1,200 / yr", maint: "$450 / yr", ins: "$850 / yr" }
   },
   crv_2025: {
     name: "Honda CR-V 2025",
@@ -36,14 +36,14 @@ const carDatabase = {
     matchPct: "91%",
     img: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Không gian hàng ghế 2 & 3 vô cùng rộng rãi",
-      "✓ Trang bị gói an toàn Honda SENSING hiện đại",
-      "✓ Động cơ Hybrid/Turbo vận hành êm ái, tiết kiệm",
-      "✓ Xe gia đình đa dụng, độ bền cực cao"
+      "✓ Exceptionally spacious 2nd & 3rd-row seating area",
+      "✓ Equipped with advanced Honda SENSING safety suite",
+      "✓ Smooth, fuel-efficient Hybrid/Turbo powertrain options",
+      "✓ High reliability and versatile family suitability"
     ],
-    consider: "Hộp số CVT tập trung vào độ mượt mà hơn là cảm giác tăng tốc bốc.",
+    consider: "CVT transmission is tuned for smoothness rather than aggressive acceleration.",
     ratings: { comfort: "★★★★★", practical: "★★★★★", perf: "★★★☆☆", cost: "★★★★☆" },
-    costs: { price: "$34,500", fuel: "$1,400 / năm", maint: "$600 / năm", ins: "$1,100 / năm" }
+    costs: { price: "$34,500", fuel: "$1,400 / yr", maint: "$600 / yr", ins: "$1,100 / yr" }
   },
   stargazer_2024: {
     name: "Hyundai Stargazer X 2024",
@@ -51,14 +51,14 @@ const carDatabase = {
     matchPct: "87%",
     img: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Giá thành sở hữu và chi phí sử dụng rất kinh tế",
-      "✓ Nội thất 7 chỗ ngồi linh hoạt cho gia đình đông người",
-      "✓ Trang bị tiện nghi và công nghệ vượt tầm giá",
-      "✓ Khoảng sáng gầm xe tốt, thích hợp đường đô thị lẫn ngập nước"
+      "✓ Highly economic purchase price and running expenses",
+      "✓ Flexible 7-seater cabin tailored for larger families",
+      "✓ Feature-packed interior exceeding its price point",
+      "✓ Good ground clearance suitable for urban and rougher roads"
     ],
-    consider: "Kiểu dáng độc lạ, công suất động cơ ở mức đủ dùng.",
+    consider: "Futuristic/unconventional styling with modest engine output.",
     ratings: { comfort: "★★★★☆", practical: "★★★★★", perf: "★★☆☆☆", cost: "★★★★★" },
-    costs: { price: "$19,500", fuel: "$1,100 / năm", maint: "$350 / năm", ins: "$650 / năm" }
+    costs: { price: "$19,500", fuel: "$1,100 / yr", maint: "$350 / yr", ins: "$650 / yr" }
   },
   santafe_2026: {
     name: "Hyundai Santa Fe 2026",
@@ -66,14 +66,14 @@ const carDatabase = {
     matchPct: "93%",
     img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Thiết kế vuông vức phong cách SUV hạng sang hiện đại",
-      "✓ Khoang cabin ngập tràn công nghệ & màn hình lớn",
-      "✓ Khả năng cách âm đỉnh cao, hàng ghế thứ 3 rộng rãi",
-      "✓ Khung gầm chắc chắn, nhiều chế độ địa hình"
+      "✓ Bold, boxy luxury SUV aesthetic with high road presence",
+      "✓ Tech-loaded cabin featuring giant dual displays",
+      "✓ Outstanding sound insulation and spacious 3rd row",
+      "✓ Rigid chassis with multi-terrain drive mode options"
     ],
-    consider: "Kích thước xe tương đối lớn, cần thời gian quen khi đỗ xe hẹp.",
+    consider: "Large vehicle dimensions require extra attention when parking in tight spaces.",
     ratings: { comfort: "★★★★★", practical: "★★★★★", perf: "★★★★☆", cost: "★★★★☆" },
-    costs: { price: "$41,000", fuel: "$1,700 / năm", maint: "$750 / năm", ins: "$1,300 / năm" }
+    costs: { price: "$41,000", fuel: "$1,700 / yr", maint: "$750 / yr", ins: "$1,300 / yr" }
   },
   tucson: {
     name: "Hyundai Tucson",
@@ -81,29 +81,29 @@ const carDatabase = {
     matchPct: "89%",
     img: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Thiết kế ngoại thất hiện đại, phá cách",
-      "✓ Bố trí khoang lái rộng rãi, thoáng đãng",
-      "✓ Động cơ Turbo vận hành bốc và linh hoạt trong phố",
-      "✓ Nhiều tiện nghi option vượt trội trong tầm giá"
+      "✓ Cutting-edge, avant-garde exterior design",
+      "✓ Airy, futuristic, and spacious cockpit layout",
+      "✓ Punchy Turbo engine perfect for city and highway driving",
+      "✓ Rich set of convenience features and equipment"
     ],
-    consider: "Vô-lăng cảm giác lái nhẹ, phù hợp đi phố hơn đi đua.",
+    consider: "Steering feels light and prioritized for urban comfort over track feedback.",
     ratings: { comfort: "★★★★☆", practical: "★★★★☆", perf: "★★★★☆", cost: "★★★★☆" },
-    costs: { price: "$31,000", fuel: "$1,500 / năm", maint: "$550 / năm", ins: "$1,000 / năm" }
+    costs: { price: "$31,000", fuel: "$1,500 / yr", maint: "$550 / yr", ins: "$1,000 / yr" }
   },
   fortuner: {
     name: "Toyota Fortuner",
-    type: "⛰️ Rugged SUV Match",
+    type: "⛰️️ Rugged SUV Match",
     matchPct: "86%",
     img: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Khung gầm rời (Body-on-frame) siêu bền bỉ",
-      "✓ Động cơ Dầu tiết kiệm, sức kéo cực mạnh mẽ",
-      "✓ Khả năng off-road và đi đường xấu đỉnh cao",
-      "✓ Độ bền thương hiệu Toyota, giữ giá cực tốt"
+      "✓ Ultra-durable body-on-frame SUV chassis",
+      "✓ High-torque Diesel engine with excellent fuel economy",
+      "✓ Exceptional off-road and rough terrain capabilities",
+      "✓ Renowned Toyota durability and strong value retention"
     ],
-    consider: "Hệ thống treo hơi cứng khi đi phố không tải.",
+    consider: "Suspension setup can feel slightly firm when driving unladen in the city.",
     ratings: { comfort: "★★★☆☆", practical: "★★★★★", perf: "★★★★☆", cost: "★★★★☆" },
-    costs: { price: "$39,000", fuel: "$1,500 / năm", maint: "$600 / năm", ins: "$1,200 / năm" }
+    costs: { price: "$39,000", fuel: "$1,500 / yr", maint: "$600 / yr", ins: "$1,200 / yr" }
   },
   innova: {
     name: "Toyota Innova Cross",
@@ -111,14 +111,14 @@ const carDatabase = {
     matchPct: "88%",
     img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Nội thất 7-8 chỗ ngồi rộng rãi nhất phân khúc",
-      "✓ Tùy chọn động cơ Hybrid siêu tiết kiệm xăng",
-      "✓ Hàng ghế thương gia êm ái, đi xa không mệt mỏi",
-      "✓ Xe gia đình & kinh doanh cực kỳ lành tính"
+      "✓ Best-in-class 7 to 8-passenger interior capacity",
+      "✓ Ultra-frugal Hybrid powertrain option",
+      "✓ Captain seat layout for relaxed long-distance travel",
+      "✓ Extremely dependable for both family and business needs"
     ],
-    consider: "Cảm giác lái thuần túy nhẹ nhàng, không thiên về thể thao.",
+    consider: "Relaxed driving feel engineered for passenger comfort rather than performance.",
     ratings: { comfort: "★★★★★", practical: "★★★★★", perf: "★★★☆☆", cost: "★★★★★" },
-    costs: { price: "$33,000", fuel: "$1,200 / năm", maint: "$500 / năm", ins: "$1,000 / năm" }
+    costs: { price: "$33,000", fuel: "$1,200 / yr", maint: "$500 / yr", ins: "$1,000 / yr" }
   },
   carnival: {
     name: "Kia Carnival",
@@ -126,14 +126,14 @@ const carDatabase = {
     matchPct: "94%",
     img: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Khoang cabin rộng rãi chuẩn chuyên chở thương gia",
-      "✓ Cửa lùa điện cực kỳ tiện lợi cho trẻ em và người già",
-      "✓ Động cơ Smartstream Dầu cực êm và tiết kiệm",
-      "✓ Trang bị miên man: ghế massage, màn hình đôi..."
+      "✓ First-class luxury cabin offering executive passenger space",
+      "✓ Dual power-sliding rear doors for effortless entry/exit",
+      "✓ Refined Smartstream Diesel engine with great efficiency",
+      "✓ Packed with amenities: VIP seats, twin screens, and ambient lighting"
     ],
-    consider: "Thân xe dài (hơn 5m), cần chú ý khi quay đầu trong ngõ hẹp.",
+    consider: "Longer body profile (over 5m) requires extra caution in narrow alleys.",
     ratings: { comfort: "★★★★★", practical: "★★★★★", perf: "★★★★☆", cost: "★★★★☆" },
-    costs: { price: "$46,000", fuel: "$1,600 / năm", maint: "$700 / năm", ins: "$1,400 / năm" }
+    costs: { price: "$46,000", fuel: "$1,600 / yr", maint: "$700 / yr", ins: "$1,400 / yr" }
   },
   sorento: {
     name: "Kia Sorento",
@@ -141,14 +141,14 @@ const carDatabase = {
     matchPct: "90%",
     img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Thiết kế sang trọng mang phong cách xe Mỹ",
-      "✓ Đa dạng tùy chọn động cơ (Dầu, Xăng, Hybrid)",
-      "✓ Nhiều tính năng an toàn quan sát điểm mù BVM",
-      "✓ Nội thất hiện đại với hệ thống loa Bose chất lượng"
+      "✓ Sophisticated exterior design inspired by American SUVs",
+      "✓ Wide choice of powertrains (Diesel, Gasoline, Hybrid)",
+      "✓ Advanced safety suite with Blind-Spot View Monitor",
+      "✓ Premium interior atmosphere complemented by Bose audio"
     ],
-    consider: "Hàng ghế thứ 3 chỉ phù hợp cho trẻ em hoặc đi chặng ngắn.",
+    consider: "3rd-row legroom is best suited for kids or shorter trips.",
     ratings: { comfort: "★★★★☆", practical: "★★★★☆", perf: "★★★★☆", cost: "★★★★☆" },
-    costs: { price: "$38,000", fuel: "$1,600 / năm", maint: "$650 / năm", ins: "$1,200 / năm" }
+    costs: { price: "$38,000", fuel: "$1,600 / yr", maint: "$650 / yr", ins: "$1,200 / yr" }
   },
   sportage: {
     name: "Kia Sportage",
@@ -156,14 +156,14 @@ const carDatabase = {
     matchPct: "88%",
     img: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Thiết kế tương lai, đường nét phá cách độc đáo",
-      "✓ Màn hình cong kép tràn viền cao cấp",
-      "✓ Khả năng tăng tốc ấn tượng với bản 1.6 Turbo",
-      "✓ Không gian để chân phía sau rất thoải mái"
+      "✓ Futuristic, head-turning design language",
+      "✓ High-tech curved dual display dashboard layout",
+      "✓ Energetic acceleration with the 1.6 Turbo trim",
+      "✓ Generous rear seat legroom and practical boot space"
     ],
-    consider: "Thiết kế đầu xe phá cách có thể không hợp mắt khách hàng truyền thống.",
+    consider: "Bold front-end styling might be polarizing for traditional buyers.",
     ratings: { comfort: "★★★★☆", practical: "★★★★☆", perf: "★★★★☆", cost: "★★★★☆" },
-    costs: { price: "$30,000", fuel: "$1,450 / năm", maint: "$550 / năm", ins: "$950 / năm" }
+    costs: { price: "$30,000", fuel: "$1,450 / yr", maint: "$550 / yr", ins: "$950 / yr" }
   },
   carens: {
     name: "Kia Carens",
@@ -171,14 +171,14 @@ const carDatabase = {
     matchPct: "85%",
     img: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Kích thước gọn gàng, linh hoạt luồn lách trong phố",
-      "✓ Cấu hình 6 hoặc 7 chỗ tiện dụng",
-      "✓ Trang bị bàn làm việc/ăn nhẹ sau lưng ghế",
-      "✓ Chi phí đầu tư ban đầu cực kỳ hợp lý"
+      "✓ Compact exterior footprint, agile for city navigation",
+      "✓ Flexible 6 or 7-seat configuration option",
+      "✓ Practical seatback foldaway tables for passengers",
+      "✓ Highly accessible entry-level price point"
     ],
-    consider: "Chất liệu nhựa nội thất ở mức phổ thông.",
+    consider: "Interior trim materials feature basic hard plastics in lower grades.",
     ratings: { comfort: "★★★☆☆", practical: "★★★★★", perf: "★★★☆☆", cost: "★★★★★" },
-    costs: { price: "$23,000", fuel: "$1,250 / năm", maint: "$400 / năm", ins: "$750 / năm" }
+    costs: { price: "$23,000", fuel: "$1,250 / yr", maint: "$400 / yr", ins: "$750 / yr" }
   },
   k5: {
     name: "Kia K5",
@@ -186,18 +186,18 @@ const carDatabase = {
     matchPct: "89%",
     img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1000&q=80",
     whyFits: [
-      "✓ Kiểu dáng Fastback quyến rũ, đậm chất thể thao",
-      "✓ Khoang lái hướng về người lái như xe đua",
-      "✓ Vận hành đầm chắc trên đường cao tốc",
-      "✓ Giá bán hấp dẫn nhất phân khúc Sedan hạng D"
+      "✓ Striking Fastback silhouette with aggressive styling",
+      "✓ Driver-centric cockpit design with intuitive controls",
+      "✓ Composed and stable high-speed highway handling",
+      "✓ Competitive value proposition in the Mid-size Sedan segment"
     ],
-    consider: "Trần xe hàng ghế sau hơi thấp do thiết kế vuốt dốc.",
+    consider: "Rear headroom is slightly sloped due to the fastback roofline.",
     ratings: { comfort: "★★★★☆", practical: "★★★☆☆", perf: "★★★★☆", cost: "★★★★☆" },
-    costs: { price: "$29,000", fuel: "$1,400 / năm", maint: "$500 / năm", ins: "$900 / năm" }
+    costs: { price: "$29,000", fuel: "$1,400 / yr", maint: "$500 / yr", ins: "$900 / yr" }
   }
 };
 
-// LOGIC ĐIỀU HƯỚNG QUIZ
+// QUIZ NAVIGATION LOGIC
 let currentStep = 1;
 const totalSteps = 6;
 
@@ -268,7 +268,7 @@ function toggleBudgetNotSure() {
   }
 }
 
-// XỬ LÝ CHỌN XE HIỂN THỊ CHI TIẾT
+// CAR DETAIL DISPLAY LOADER
 function loadCarDetail(carKey) {
   const car = carDatabase[carKey] || carDatabase['bmw_x3'];
   
@@ -299,7 +299,7 @@ function loadCarDetail(carKey) {
     </div>
   `;
 
-  // Cập nhật bảng so sánh & chi phí nuôi xe
+  // Update comparison table & ownership cost breakdown
   const compTable = document.getElementById('compareTableBody');
   if (compTable) {
     compTable.innerHTML = `
@@ -316,11 +316,11 @@ function loadCarDetail(carKey) {
         <td>${car.ratings.practical}</td>
       </tr>
       <tr>
-        <td>Performance & Driving</td>
+        <td>Performance & Driving Dynamics</td>
         <td>${car.ratings.perf}</td>
       </tr>
       <tr>
-        <td>Cost Efficiency</td>
+        <td>Cost Efficiency & Ownership Value</td>
         <td>${car.ratings.cost}</td>
       </tr>
     `;
@@ -349,7 +349,12 @@ function loadCarDetail(carKey) {
   }
 }
 
-// BỘ LỌC BÀI VIẾT CÂU CHUYỆN
+// INITIALIZE DEFAULT CAR DISPLAY UPON PAGE LOAD
+document.addEventListener('DOMContentLoaded', () => {
+  loadCarDetail('bmw_x3');
+});
+
+// STORY ARTICLE FILTER
 function filterStories(category, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
