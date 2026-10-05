@@ -905,3 +905,56 @@ blockquote {
   .nav-menu { display: none; }
   .event-card { flex-direction: column; align-items: flex-start; }
 }
+/* Khoảng cách giữa phần Quiz và phần Community */
+.quiz-container {
+  margin-bottom: 100px !important; /* Tạo khoảng cách lớn với Community Directory */
+  position: relative;
+}
+
+/* Khung chứa các nút điều hướng */
+.quiz-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Kiểu dáng chung cho các nút */
+.btn-nav {
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Nút CONTINUE (Chính) */
+.btn-primary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  margin-left: auto; /* Tự động đẩy nút sang bên phải nếu không có nút Back */
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Nút BACK (Phụ) */
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 2px solid #cbd5e1;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
