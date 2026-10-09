@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build My Car | MinhinMotion</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .build-page { max-width: 1100px; margin: 40px auto; padding: 0 20px; color: #fff; }
+    .build-step { display: none; }
+    .build-step.active { display: block; }
+    .selector-group select { padding: 12px; margin: 8px 0; border-radius: 8px; width: 100%; font-size: 16px; }
+    .style-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0; }
+    .style-card { border: 2px solid #334155; border-radius: 12px; padding: 20px; text-align: center; cursor: pointer; background: #1e293b; }
+    .style-card.selected { border-color: #2563eb; background: #1d4ed8; }
+    .build-main-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 30px; }
+    .car-preview-img { width: 100%; border-radius: 12px; }
+    .style-badge { background: #2563eb; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+    .accordion-item { border: 1px solid #334155; margin-bottom: 10px; border-radius: 8px; background: #1e293b; }
+    .accordion-header { padding: 14px; cursor: pointer; display: flex; justify-content: space-between; font-weight: bold; }
+    .parts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px; }
+    .part-card { border: 1px solid #475569; padding: 10px; border-radius: 8px; text-align: center; }
+    .part-card img { width: 100%; height: 80px; object-fit: cover; border-radius: 6px; }
+    .part-card.active { border-color: #22c55e; background: rgba(34, 197, 94, 0.1); }
+    .hidden { display: none !important; }
+    .sub-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; }
+    .sub-modal-content { background: #0f172a; padding: 30px; border-radius: 12px; max-width: 450px; border: 1px solid #334155; }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">MinhinMotion</a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn-quiz-nav">← HOME</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="build-page">
+    <!-- STEP 1 -->
+    <div id="stepSelectCar" class="build-step active">
+      <h2>What car are you building?</h2>
+      <div class="selector-group">
+        <select id="selectMake" onchange="onMakeChange()"><option value="">Select Make ▼</option></select>
+        <select id="selectModel" disabled onchange="onModelChange()"><option value="">Select Model ▼</option></select>
+        <select id="selectGen" disabled onchange="onGenChange()"><option value="">Select Generation ▼</option></select>
+        <select id="selectTrim" disabled><option value="">Select Year / Trim ▼</option></select>
+      </div>
+      <button class="btn btn-primary" onclick="goToBuildStep(2)">CONTINUE →</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div id="stepSelectStyle" class="build-step">
+      <h2>What's your build style?</h2>
+      <div class="style-grid" id="styleGrid"></div>
+      <button class="btn btn-primary" onclick="goToBuildStep(3)">CONTINUE →</button>
+    </div>
+
+    <!-- STEP 3 -->
+    <div id="stepBuildMain" class="build-step">
+      <div class="build-main-grid">
+        <div>
+          <h3>🚘 YOUR CAR</h3>
+          <img id="buildCarImg" class="car-preview-img" src="" alt="Car">
+          <h4 id="buildCarTitle"></h4>
+          <span id="buildStyleBadge" class="style-badge"></span>
+          <div style="margin-top: 20px;">
+            <button class="btn btn-secondary" onclick="toggleRecommendationModal()">💡 WHAT SHOULD I MODIFY FIRST?</button>
+          </div>
+        </div>
+        <div>
+          <h3>🔧 MODIFICATIONS</h3>
+          <div id="modsAccordion"></div>
+          <div style="margin-top: 20px; background: #1e293b; padding: 15px; border-radius: 8px;">
+            <h4>ESTIMATED COST: <span id="totalBuildCost" style="color: #22c55e;">$0</span></h4>
+          </div>
+          <div style="margin-top: 15px; display: flex; gap: 10px;">
+            <button class="btn btn-primary" onclick="saveBuild()">SAVE BUILD</button>
+            <button class="btn btn-secondary" id="btnShareBuild" style="display:none;" onclick="shareBuild()">SHARE</button>
+            <button class="btn btn-secondary" onclick="startAnotherBuild()">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div id="recommendationModal" class="sub-modal hidden">
+    <div class="sub-modal-content">
+      <h3>Recommended Order</h3>
+      <div id="recommendationList"></div>
+      <button class="btn btn-primary" style="margin-top: 15px;" onclick="toggleRecommendationModal()">GOT IT</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/buildMyCar.js"></script>
+</body>
+</html>
