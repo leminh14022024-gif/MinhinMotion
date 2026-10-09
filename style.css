@@ -958,3 +958,96 @@ blockquote {
   background-color: #f1f5f9;
   border-color: #94a3b8;
 }
+/* ==========================================
+   FEATURED TOOL - BUILD YOUR CAR BANNER
+   ========================================== */
+
+.build-banner-wrapper {
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.build-banner-card {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  gap: 30px;
+}
+
+.build-badge {
+  display: inline-block;
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.build-banner-content h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.5px;
+}
+
+.build-banner-content p {
+  color: #94a3b8;
+  font-size: 15px;
+  margin: 0;
+  max-width: 550px;
+  line-height: 1.5;
+}
+
+.btn-build-now {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.btn-build-now:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.btn-build-now span {
+  transition: transform 0.2s ease;
+}
+
+.btn-build-now:hover span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .build-banner-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 24px;
+  }
+  
+  .btn-build-now {
+    width: 100%;
+    justify-content: center;
+  }
+}
